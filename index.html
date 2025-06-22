@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفضل مواقع مشاهدة الأفلام والمسلسلات المجانية - السينما في بيتك</title>
+    <meta name="description" content="اكتشف أفضل المواقع المجانية لمشاهدة الأفلام والمسلسلات العربية والأجنبية بجودة عالية. دليل شامل مع أفضل مواقع الستريمنج المجانية.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            direction: rtl;
+            background: hsl(210, 25%, 8%);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Background Animation */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.1;
+        }
+
+        .floating-circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .circle-1 {
+            top: 40px;
+            right: 40px;
+            width: 256px;
+            height: 256px;
+            background: hsl(43, 92%, 49%);
+        }
+
+        .circle-2 {
+            top: 50%;
+            left: 40px;
+            width: 192px;
+            height: 192px;
+            background: hsl(217, 91%, 60%);
+            animation-delay: -2s;
+        }
+
+        .circle-3 {
+            bottom: 40px;
+            right: 33%;
+            width: 224px;
+            height: 224px;
+            background: #9333ea;
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-40px); }
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            z-index: 10;
+            background: rgba(15, 20, 25, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid hsl(240, 3.7%, 15.9%);
+            padding: 16px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-icon {
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            padding: 12px;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: hsl(43, 92%, 49%);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, hsl(210, 25%, 8%) 0%, hsl(260, 41%, 11%) 50%, hsl(260, 41%, 20%) 100%);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: #d1d5db;
+            margin-bottom: 32px;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            color: black;
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(245, 158, 11, 0.5);
+        }
+
+        .btn-secondary {
+            border: 2px solid hsl(43, 92%, 49%);
+            color: hsl(43, 92%, 49%);
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: hsl(43, 92%, 49%);
+            color: black;
+        }
+
+        /* Warning Section */
+        .warning {
+            padding: 24px 0;
+            background: linear-gradient(to right, rgba(153, 27, 27, 0.8), rgba(185, 28, 28, 0.8));
+        }
+
+        .warning-content {
+            background: rgba(185, 28, 28, 0.6);
+            padding: 16px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .warning-icon {
+            color: #fbbf24;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .warning-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fecaca;
+        }
+
+        /* Sites Section */
+        .sites-section {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, hsl(260, 41%, 11%), hsl(210, 25%, 8%));
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            color: #d1d5db;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Search Filter */
+        .search-filter {
+            padding: 48px 0;
+            background: hsl(260, 41%, 11%);
+        }
+
+        .search-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .search-input {
+            width: 100%;
+            background: #374151;
+            border: 2px solid #4b5563;
+            border-radius: 50px;
+            padding: 16px 24px 16px 56px;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 32px;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: hsl(43, 92%, 49%);
+        }
+
+        .search-input::placeholder {
+            color: #9ca3af;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            background: #374151;
+            color: white;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: hsl(43, 92%, 49%);
+            color: black;
+        }
+
+        /* Sites Grid */
+        .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .site-card {
+            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #4b5563;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .site-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+        }
+
+        .card-image {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .site-card:hover .card-image img {
+            transform: scale(1.1);
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .badge-series { background: #f59e0b; }
+        .badge-movies { background: #dc2626; }
+        .badge-arabic { background: #059669; }
+        .badge-hd { background: #7c3aed; }
+        .badge-library { background: #2563eb; }
+        .badge-4k { background: #dc2626; }
+        .badge-popular { background: #f59e0b; }
+        .badge-comprehensive { background: #7c3aed; }
+
+        .card-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+        }
+
+        .card-content {
+            padding: 24px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: hsl(43, 92%, 49%);
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            color: #d1d5db;
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #374151;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        .rating-star {
+            color: #fbbf24;
+        }
+
+        .visit-btn {
+            background: linear-gradient(to right, #2563eb, #1d4ed8);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .visit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Statistics Section */
+        .stats-section {
+            padding: 80px 0;
+            background: hsl(260, 41%, 11%);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 32px;
+            text-align: center;
+        }
+
+        .stat-item {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.6s ease-out forwards;
+        }
+
+        .stat-item:nth-child(1) { animation-delay: 0.1s; }
+        .stat-item:nth-child(2) { animation-delay: 0.2s; }
+        .stat-item:nth-child(3) { animation-delay: 0.3s; }
+        .stat-item:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: hsl(43, 92%, 49%);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: #d1d5db;
+        }
+
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            background: hsl(210, 25%, 8%);
+            border-top: 1px solid hsl(240, 3.7%, 15.9%);
+            text-align: center;
+        }
+
+        .footer-content {
+            margin-bottom: 32px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .footer-description {
+            color: #9ca3af;
+            margin-bottom: 24px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .social-link {
+            color: #9ca3af;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .social-link:hover {
+            color: hsl(43, 92%, 49%);
+            transform: scale(1.2) translateY(-2px);
+        }
+
+        .follow-btn {
+            background: linear-gradient(to right, hsl(43, 92%, 49%), hsl(45, 93%, 47%));
+            color: black;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s;
+            margin: 0 12px;
+        }
+
+        .follow-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+        }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid hsl(240, 3.7%, 15.9%);
+        }
+
+        .footer-text {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .filter-buttons {
+                justify-content: center;
+            }
+
+            .sites-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .social-links {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 40px 20px;
+                min-height: 80vh;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+        }
+
+        /* Utility Classes */
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        /* Icons */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .icon-large {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg class="icon icon-large" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm3 2h6v4H7V5zm8 8v2h1v-2h-1zm-2-2H7v4h6v-4zm2 0h1V9h-1v2zm1-4V5h-1v2h1zM5 5v6H4V5h1zm0 8H4v2h1v-2z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="logo-text">السينما في بيتك</div>
+                </div>
+                <nav class="nav-links">
+                    <a href="#sites">المواقع</a>
+                    <a href="#about" onclick="showAboutModal()">حولنا</a>
+                    <a href="https://ibrahimmustafacv.github.io/my-social-media-page/" target="_blank">اتصل بنا</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080" alt="Popcorn and cinema">
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">أفضل مواقع</span><br>
+                <span>مشاهدة الأفلام</span>
+            </h1>
+            <p class="hero-subtitle">
+                اكتشف مجموعة مختارة من أفضل المواقع المجانية لمشاهدة الأفلام والمسلسلات بجودة عالية
+            </p>
+            <div class="hero-buttons">
+                <a href="#sites" class="btn btn-primary">
+                    <svg class="icon" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                    استكشف المواقع
+                </a>
+                <button class="btn btn-secondary" onclick="showMoreInfoModal()">
+                    <svg class="icon" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                    </svg>
+                    المزيد من المعلومات
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warning Section -->
+    <section class="warning">
+        <div class="container">
+            <div class="warning-content">
+                <svg class="icon warning-icon" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                </svg>
+                <p class="warning-text">
+                    <strong>تحذير:</strong> صنّاع هذا الموقع غير مسؤولين عن الإعلانات أو المحتوى الذي قد يظهر في المواقع المعروضة. استخدمها على مسؤوليتك الشخصية.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Filter Section -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-container">
+                <div style="position: relative;">
+                    <input type="text" id="searchInput" class="search-input" placeholder="ابحث عن موقع معين...">
+                    <svg class="icon" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #9ca3af;" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">جميع المواقع</button>
+                    <button class="filter-btn" data-filter="series">المسلسلات</button>
+                    <button class="filter-btn" data-filter="movies">الأفلام</button>
+                    <button class="filter-btn" data-filter="arabic">عربي</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sites Section -->
+    <section id="sites" class="sites-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مواقع المشاهدة المجانية</h2>
+                <p class="section-subtitle">مجموعة مختارة بعناية من أفضل المواقع لمشاهدة الأفلام والمسلسلات</p>
+            </div>
+            <div class="sites-grid" id="sitesGrid">
+                <!-- Sites will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">مواقع متاحة</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">ساعة محتوى</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">تصنيف مختلف</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">ساعة متاح</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg class="icon icon-large" viewBox="0 0 32 32" fill="currentColor">
+                            <!-- Cinema screen frame -->
+                            <rect x="4" y="8" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <!-- Screen content -->
+                            <rect x="6" y="10" width="20" height="12" rx="1" fill="currentColor" opacity="0.3"/>
+                            <!-- Play button -->
+                            <circle cx="16" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M14 12l6 4-6 4z" fill="currentColor"/>
+                            <!-- Popcorn box -->
+                            <path d="M10 24h4l-1 4h-2z" fill="currentColor"/>
+                            <path d="M18 24h4l1 4h-2z" fill="currentColor"/>
+                            <!-- Popcorn pieces -->
+                            <circle cx="11" cy="25" r="1" fill="currentColor"/>
+                            <circle cx="13" cy="23" r="0.8" fill="currentColor"/>
+                            <circle cx="19" cy="25" r="1" fill="currentColor"/>
+                            <circle cx="21" cy="23" r="0.8" fill="currentColor"/>
+                            <!-- Stars for magic -->
+                            <path d="M8 4l1 2 2-1-1 2 1 2-2-1-1 2-1-2-2 1 1-2z" fill="currentColor" opacity="0.7"/>
+                            <path d="M24 6l0.5 1 1-0.5-0.5 1 0.5 1-1-0.5-0.5 1-0.5-1-1 0.5 0.5-1z" fill="currentColor" opacity="0.7"/>
+                        </svg>
+                    </div>
+                    <h3 class="logo-text">السينما في بيتك</h3>
+                </div>
+                <p class="footer-description">
+                    دليلك الشامل لأفضل مواقع مشاهدة الأفلام والمسلسلات المجانية على الإنترنت
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-large" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-large" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-large" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.73-3.016-1.8-.326-.614-.326-1.335 0-1.949.568-1.07 1.719-1.8 3.016-1.8 1.297 0 2.448.73 3.016 1.8.326.614.326 1.335 0 1.949-.568 1.07-1.719 1.8-3.016 1.8zm7.138 0c-1.297 0-2.448-.73-3.016-1.8-.326-.614-.326-1.335 0-1.949.568-1.07 1.719-1.8 3.016-1.8 1.297 0 2.448.73 3.016 1.8.326.614.326 1.335 0 1.949-.568 1.07-1.719 1.8-3.016 1.8z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg class="icon icon-large" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://ibrahimmustafacv.github.io/my-social-media-page/" target="_blank" class="follow-btn">
+                        <svg class="icon" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
+                        </svg>
+                        تابعنا هنا
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">
+                    © 2024 السينما في بيتك. جميع الحقوق محفوظة. | تم التطوير بـ إبراهيم مصطفى للمجتمع العربي
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="aboutModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+            <h2>حولنا</h2>
+            <div style="text-align: right; line-height: 1.8; color: #d1d5db;">
+                <p style="margin-bottom: 20px;">
+                    <strong style="color: #f59e0b;">"السينما في بيتك"</strong> هو موقع عربي بسيط هدفه توفير تجربة تصفح سهلة وسريعة لأشهر وأفضل مواقع مشاهدة الأفلام والمسلسلات مجانًا.
+                </p>
+                <div style="background: rgba(55, 65, 81, 0.5); padding: 20px; border-radius: 8px; border-right: 4px solid #f59e0b;">
+                    <p>
+                        نحن لا نستضيف أي محتوى مرئي، ولا نملك أي من المواقع المدرجة، فقط نعرضها لك في مكان واحد بشكل منظم وجذاب لتسهيل الوصول إليها.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="moreInfoModal" class="modal" style="display: none;">
+        <div class="modal-content" style="max-width: 800px; max-height: 80vh; overflow-y: auto;">
+            <span class="close" onclick="closeModal('moreInfoModal')">&times;</span>
+            <h2>معلومات مفصلة</h2>
+            <div style="text-align: right; line-height: 1.8; color: #d1d5db;">
+                <!-- Complete detailed information content -->
+                <div style="margin-bottom: 30px; background: linear-gradient(135deg, #374151 0%, #1f2937 100%); padding: 25px; border-radius: 12px;">
+                    <h3 style="color: #f59e0b; margin-bottom: 15px; display: flex; align-items: center;">
+                        🧾 ما هو هذا الموقع؟
+                    </h3>
+                    <p>"السينما في بيتك" هي أداة سهلة وسريعة بتجمعلك أفضل المواقع العربية لمشاهدة الأفلام والمسلسلات مجانًا، بدون الحاجة للبحث الطويل.</p>
+                </div>
+
+                <div style="margin-bottom: 30px; background: linear-gradient(135deg, #374151 0%, #1f2937 100%); padding: 25px; border-radius: 12px;">
+                    <h3 style="color: #3b82f6; margin-bottom: 15px;">🎯 ماذا يقدم الموقع؟</h3>
+                    <div style="margin: 15px 0;">
+                        <div style="margin-bottom: 10px;">🔍 تجميع منسق لأفضل مواقع المشاهدة المجانية</div>
+                        <div>🖼️ تصميم تفاعلي وسهل التصفح</div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 30px; background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); padding: 25px; border-radius: 12px; border: 2px solid #dc2626;">
+                    <h3 style="color: #fbbf24; margin-bottom: 15px;">⚠️ تحذير مهم</h3>
+                    <p style="color: white;">نحن لا نستضيف أي محتوى ولا نتحكم في الإعلانات الظاهرة داخل المواقع المدرجة.</p>
+                </div>
+
+                <div style="margin-bottom: 30px; background: linear-gradient(135deg, #374151 0%, #1f2937 100%); padding: 25px; border-radius: 12px;">
+                    <h3 style="color: #8b5cf6; margin-bottom: 15px;">📢 ملاحظات هامة</h3>
+                    <div style="margin: 15px 0;">
+                        <div style="margin-bottom: 10px;">• الموقع لأغراض الفهرسة فقط.</div>
+                        <div style="margin-bottom: 10px;">• لا نرفع أي محتوى ولا نتحمل مسؤولية المواد المعروضة في المواقع الخارجية.</div>
+                        <div>• نوصي باستخدام مانع إعلانات (Ad Blocker) لتحسين تجربتك.</div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #059669 0%, #047857 100%); padding: 25px; border-radius: 12px;">
+                    <h3 style="color: #4ade80; margin-bottom: 15px;">🚀 هل يمكنني المساهمة؟</h3>
+                    <p style="margin-bottom: 20px;">أكيد! تقدر ترسل اقتراحات لمواقع جديدة أو تحسينات للتصميم من خلال زر تابعنا هنا</p>
+                    <a href="https://ibrahimmustafacv.github.io/my-social-media-page/" target="_blank" style="background: linear-gradient(to right, #f59e0b, #f59e0b); color: black; padding: 12px 24px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;">
+                        <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" />
+                        </svg>
+                        تابعنا هنا
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        /* Modal Styles */
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 1px solid #374151;
+        }
+
+        .modal-content h2 {
+            color: #f59e0b;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .close {
+            color: #9ca3af;
+            float: left;
+            font-size: 32px;
+            font-weight: bold;
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close:hover {
+            color: #f59e0b;
+        }
+    </style>
+
+    <script>
+        // Streaming sites data
+        const streamingSites = [
+            {
+                id: 1,
+                name: "وقت المسلسلات",
+                url: "https://series-time.co/m1/",
+                description: "منصة لعرض المسلسلات بجودة عالية.",
+                category: "series",
+                rating: 4.5,
+                badge: "مسلسلات",
+                badgeClass: "badge-series",
+                image: "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 2,
+                name: "توب سينما",
+                url: "https://web6.topcinema.cam/",
+                description: "أفلام ومسلسلات مترجمة ومحدثة باستمرار.",
+                category: "movies",
+                rating: 4.7,
+                badge: "أفلام",
+                badgeClass: "badge-movies",
+                image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 3,
+                name: "سيما ناو",
+                url: "https://bs.cimanow.cc/home/",
+                description: "موقع للأفلام العربية والأجنبية.",
+                category: "arabic",
+                rating: 4.3,
+                badge: "عربي",
+                badgeClass: "badge-arabic",
+                image: "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 4,
+                name: "سيما وبس",
+                url: "https://mycima.cc/index.php",
+                description: "أحدث الأفلام والمسلسلات بجودة ممتازة.",
+                category: "movies",
+                rating: 4.6,
+                badge: "HD",
+                badgeClass: "badge-hd",
+                image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 5,
+                name: "عرب سيد",
+                url: "https://a.asd.homes/main/",
+                description: "مكتبة ضخمة من الأفلام والمسلسلات.",
+                category: "arabic",
+                rating: 4.4,
+                badge: "مكتبة",
+                badgeClass: "badge-library",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 6,
+                name: "إيجي ديد",
+                url: "https://egydeadw.sbs/",
+                description: "أفلام ومسلسلات مترجمة بجودة عالية.",
+                category: "movies",
+                rating: 4.5,
+                badge: "4K",
+                badgeClass: "badge-4k",
+                image: "https://images.unsplash.com/photo-1616530940355-351fabd9524b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 7,
+                name: "فاصل إعلاني",
+                url: "https://web184.faselhd.cafe/",
+                description: "موقع شهير لمتابعة الأفلام المترجمة.",
+                category: "movies",
+                rating: 4.8,
+                badge: "شهير",
+                badgeClass: "badge-popular",
+                image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            },
+            {
+                id: 8,
+                name: "شاهد فور يو",
+                url: "https://shahid4u.blog/",
+                description: "أفلام ومسلسلات بكل التصنيفات.",
+                category: "series",
+                rating: 4.2,
+                badge: "شامل",
+                badgeClass: "badge-comprehensive",
+                image: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+            }
+        ];
+
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        // Render sites
+        function renderSites(sites = streamingSites) {
+            const grid = document.getElementById('sitesGrid');
+            if (!sites.length) {
+                grid.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 50px;">
+                        <svg style="width: 64px; height: 64px; color: #6b7280; margin: 0 auto 16px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <p style="font-size: 20px; color: #6b7280;">لم يتم العثور على نتائج مطابقة لبحثك</p>
+                        <p style="color: #6b7280; margin-top: 8px;">جرب البحث بكلمات مختلفة أو اختر فئة أخرى</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = sites.map(site => `
+                <div class="site-card">
+                    <div class="card-image">
+                        <img src="${site.image}" alt="${site.name}" loading="lazy">
+                        <div class="card-overlay"></div>
+                        <div class="card-badge ${site.badgeClass}">${site.badge}</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">${site.name}</h3>
+                        <p class="card-description">${site.description}</p>
+                        <div class="card-footer">
+                            <div class="card-rating">
+                                <svg class="icon rating-star" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+                                ${site.rating}/5
+                            </div>
+                            <a href="${site.url}" target="_blank" rel="noopener noreferrer" class="visit-btn">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                زيارة الموقع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Filter functionality
+        function filterSites() {
+            let filtered = streamingSites;
+
+            // Apply category filter
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(site => site.category === currentFilter);
+            }
+
+            // Apply search filter
+            if (currentSearch) {
+                filtered = filtered.filter(site => 
+                    site.name.toLowerCase().includes(currentSearch.toLowerCase()) ||
+                    site.description.toLowerCase().includes(currentSearch.toLowerCase())
+                );
+            }
+
+            renderSites(filtered);
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            renderSites();
+
+            // Search functionality
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function(e) {
+                currentSearch = e.target.value;
+                filterSites();
+            });
+
+            // Filter buttons
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    currentFilter = this.dataset.filter;
+                    filterSites();
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Modal functions
+        function showAboutModal() {
+            document.getElementById('aboutModal').style.display = 'block';
+        }
+
+        function showMoreInfoModal() {
+            document.getElementById('moreInfoModal').style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    modal.style.display = 'none';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
