@@ -1,0 +1,31 @@
+{
+  "name": "cinema-website",
+  "version": "1.0.0",
+  "description": "موقع عربي للتعريف بأفضل مواقع مشاهدة الأفلام والمسلسلات المجانية",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Ready for deployment'"
+  },
+  "keywords": [
+    "arabic",
+    "cinema",
+    "movies",
+    "streaming",
+    "rtl",
+    "static-site"
+  ],
+  "author": "Ibrahim Mustafa",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/cinema-website.git"
+  },
+  "homepage": "https://username.github.io/cinema-website",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
